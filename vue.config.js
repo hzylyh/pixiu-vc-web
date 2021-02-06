@@ -16,14 +16,14 @@ module.exports = {
     host: '0.0.0.0',
     port: 8081,
     proxy: {
-      // // 配置跨域
-      // '/api/': {
-      //   target: 'http://192.168.1.169:3000',
-      //   ws: false,
-      //   pathRewrite: {
-      //     '^/': '/'
-      //   }
-      // },
+      // 配置跨域
+      '/api/': {
+        target: 'http://192.168.1.169:3000',
+        ws: false,
+        pathRewrite: {
+          '^/': '/'
+        }
+      },
     }
   },
 }
